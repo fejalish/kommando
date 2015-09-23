@@ -31,25 +31,15 @@
   "dependencies": {
     "address": "~0.0.3",
     "async": "~0.8.0",
-    "cabbie": "0.0.9",
     "chai": "^1.9.1",
     "chai-as-promised": "^4.1.1",
-    "cucumber": "^0.4.0",
     "freeport": "~1.0.2",
     "glob": "~3.2.6",
-    "jasmine-node": "~1.14.5",
     "lodash": "~2.4.1",
     "mocha": "~1.18.2",
     "nesh": "^1.5.0",
     "optimist": "~0.6.0",
-    "saucelabs": "~0.1.0",
-    "selenium-webdriver": "~2.43.1",
-    "wd": "~0.2.19",
-    "webdrvr": "~2.43.0-0",
-    "leadfoot": "^1.0.1",
-    "digdug": "^1.0.0",
-    "jasminewd": "^1.1.0",
-    "jasmine": "^2.0.1"
+    "wd": "~0.2.19"
   },
   "engines": {
     "node": ">=0.10"
