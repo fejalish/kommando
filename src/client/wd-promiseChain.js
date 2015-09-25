@@ -6,10 +6,10 @@ var url = require('url');
 var wd = require('wd');
 
 var colors = require('colors');
-var log4js = require('log4js');
-log4js.loadAppender('file');
-log4js.addAppender(log4js.appenders.file('./test-results/results.log'), 'results');
-var logger = log4js.getLogger('results');
+// var log4js = require('log4js');
+// log4js.loadAppender('file');
+// log4js.addAppender(log4js.appenders.file('./test-results/results.log'), 'results');
+// var logger = log4js.getLogger('results');
 
 module.exports = function(seleniumUrl) {
   return {
@@ -18,15 +18,15 @@ module.exports = function(seleniumUrl) {
       var client = wd.promiseChainRemote(url.parse(seleniumUrl));
 
       client.on('status', function(info) {
-        logger.info(info);
+        // logger.info(info);
         console.log(info.cyan);
       });
       client.on('command', function(eventType, command, response) {
-        logger.info(eventType, command, (response || ''));
+        // logger.info(eventType, command, (response || ''));
         console.log(' > ' + eventType.cyan, command, (response || '').grey);
       });
       client.on('http', function(meth, path, data) {
-        logger.info(meth, path, (data || ''));
+        // logger.info(meth, path, (data || ''));
         console.log(' > ' + meth.magenta, path, (data || '').grey);
       });
 
