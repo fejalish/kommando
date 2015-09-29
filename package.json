@@ -37,8 +37,10 @@
     "glob": "~3.2.6",
     "lodash": "~2.4.1",
     "mocha": "~2.2.4",
+    "mocha-multi": "^0.7.2",
     "nesh": "^1.5.0",
     "optimist": "~0.6.0",
+    "reporter-file": "^1.0.0",
     "wd": "~0.3.12",
     "winston": "^1.0.2"
   },
