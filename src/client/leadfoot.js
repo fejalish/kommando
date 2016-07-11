@@ -1,6 +1,6 @@
 'use strict';
 
-var promise = require('leadfoot/node_modules/dojo/Promise');
+var promise = require('dojo/Promise');
 var leadfootCommand = require('leadfoot/Command');
 var leadfootServer = require('leadfoot/Server');
 
